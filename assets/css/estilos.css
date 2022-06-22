@@ -9,7 +9,7 @@ textarea{
     background-color: aliceblue;
 }
 .logoff{
-    position: fixed;
+    position: absolute;
     right: 0;
     z-index: 9;
 }

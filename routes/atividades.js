@@ -77,13 +77,13 @@ module.exports = (app)=>{
             )
             res.redirect('/atividades?id='+desfazer.usuario)
         })
-    //Aniquilar atividades
-    app.get("/aniquilar",async(req,res)=>{
-        //recuperar o parametro id da barra de indereço
-        var id = req.query.id
-        var aniquilar = await atividades.findOneAndRemove({_id:id})
-        res.redirect('/atividades?id='+aniquilar.usuario)
-    })
+    // //Aniquilar atividades
+    // app.get("/aniquilar",async(req,res)=>{
+    //     //recuperar o parametro id da barra de indereço
+    //     var id = req.query.id
+    //     var aniquilar = await atividades.findOneAndRemove({_id:id})
+    //     res.redirect('/atividades?id='+aniquilar.usuario)
+    // })
     //criar a rota para renderizar a view alterar
     app.get('/alterar',async(req,res)=>{
         // capturar o id(atividade) da barra de endereço
